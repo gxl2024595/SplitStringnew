@@ -22,7 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="umT-4U-mCu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="G7A-xV-EFS"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入分隔符" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7RH-0q-Gj7">
@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OYR-pa-sQ8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ubx-XK-pah"/>
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pon-Zb-Zzt">
@@ -50,7 +50,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickToSplit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0V-qG-Qcu"/>
+                                    <action selector="clickToSplit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WKY-kv-L2U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,9 +71,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="split" destination="7RH-0q-Gj7" id="LoY-pb-vRC"/>
-                        <outlet property="splitedText" destination="Pon-Zb-Zzt" id="66k-Lu-eKt"/>
-                        <outlet property="stringText" destination="ZRx-U7-VxH" id="t6q-82-wKb"/>
+                        <outlet property="division" destination="7RH-0q-Gj7" id="nmd-oH-VOK"/>
+                        <outlet property="splitedStringText" destination="Pon-Zb-Zzt" id="G5c-dv-WZ8"/>
+                        <outlet property="stringText" destination="ZRx-U7-VxH" id="fId-Cq-b7g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2C132A1CE3935C00DC0A65 /* SplitStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2C13291CE3935C00DC0A65 /* SplitStringTests.m */; };
 		1CC1A9361CE32AE50052A22B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1A9351CE32AE50052A22B /* main.m */; };
 		1CC1A9391CE32AE50052A22B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1A9381CE32AE50052A22B /* AppDelegate.m */; };
 		1CC1A93C1CE32AE50052A22B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1A93B1CE32AE50052A22B /* ViewController.m */; };
@@ -15,7 +16,20 @@
 		1CC1A9441CE32AE50052A22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1A9421CE32AE50052A22B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1C2C132C1CE3935C00DC0A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC1A9291CE32AE50052A22B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC1A9301CE32AE50052A22B;
+			remoteInfo = SplitString;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1C2C13271CE3935C00DC0A65 /* SplitStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C2C13291CE3935C00DC0A65 /* SplitStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitStringTests.m; sourceTree = "<group>"; };
+		1C2C132B1CE3935C00DC0A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CC1A9311CE32AE50052A22B /* SplitString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC1A9351CE32AE50052A22B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1CC1A9371CE32AE50052A22B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C2C13241CE3935C00DC0A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1CC1A92E1CE32AE50052A22B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C2C13281CE3935C00DC0A65 /* SplitStringTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C2C13291CE3935C00DC0A65 /* SplitStringTests.m */,
+				1C2C132B1CE3935C00DC0A65 /* Info.plist */,
+			);
+			path = SplitStringTests;
+			sourceTree = "<group>";
+		};
 		1CC1A9281CE32AE50052A22B = {
 			isa = PBXGroup;
 			children = (
 				1CC1A9331CE32AE50052A22B /* SplitString */,
+				1C2C13281CE3935C00DC0A65 /* SplitStringTests */,
 				1CC1A9321CE32AE50052A22B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				1CC1A9311CE32AE50052A22B /* SplitString.app */,
+				1C2C13271CE3935C00DC0A65 /* SplitStringTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +114,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C2C13261CE3935C00DC0A65 /* SplitStringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C2C132E1CE3935C00DC0A65 /* Build configuration list for PBXNativeTarget "SplitStringTests" */;
+			buildPhases = (
+				1C2C13231CE3935C00DC0A65 /* Sources */,
+				1C2C13241CE3935C00DC0A65 /* Frameworks */,
+				1C2C13251CE3935C00DC0A65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C2C132D1CE3935C00DC0A65 /* PBXTargetDependency */,
+			);
+			name = SplitStringTests;
+			productName = SplitStringTests;
+			productReference = 1C2C13271CE3935C00DC0A65 /* SplitStringTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1CC1A9301CE32AE50052A22B /* SplitString */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC1A9481CE32AE50052A22B /* Build configuration list for PBXNativeTarget "SplitString" */;
@@ -108,6 +158,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "龚晓龙";
 				TargetAttributes = {
+					1C2C13261CE3935C00DC0A65 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1CC1A9301CE32AE50052A22B;
+					};
 					1CC1A9301CE32AE50052A22B = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -127,11 +181,19 @@
 			projectRoot = "";
 			targets = (
 				1CC1A9301CE32AE50052A22B /* SplitString */,
+				1C2C13261CE3935C00DC0A65 /* SplitStringTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C2C13251CE3935C00DC0A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1CC1A92F1CE32AE50052A22B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +207,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C2C13231CE3935C00DC0A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2C132A1CE3935C00DC0A65 /* SplitStringTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1CC1A92D1CE32AE50052A22B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +226,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C2C132D1CE3935C00DC0A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC1A9301CE32AE50052A22B /* SplitString */;
+			targetProxy = 1C2C132C1CE3935C00DC0A65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1CC1A93D1CE32AE50052A22B /* Main.storyboard */ = {
@@ -177,6 +255,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1C2C132F1CE3935C00DC0A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SplitStringTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gongxlong-126.com.SplitStringTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitString.app/SplitString";
+			};
+			name = Debug;
+		};
+		1C2C13301CE3935C00DC0A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SplitStringTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "gongxlong-126.com.SplitStringTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitString.app/SplitString";
+			};
+			name = Release;
+		};
 		1CC1A9461CE32AE50052A22B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -286,6 +388,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C2C132E1CE3935C00DC0A65 /* Build configuration list for PBXNativeTarget "SplitStringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C2C132F1CE3935C00DC0A65 /* Debug */,
+				1C2C13301CE3935C00DC0A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1CC1A92C1CE32AE50052A22B /* Build configuration list for PBXProject "SplitString" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -302,6 +412,7 @@
 				1CC1A94A1CE32AE50052A22B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
