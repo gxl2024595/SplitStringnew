@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要分割的字符串" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZRx-U7-VxH">
+                                <rect key="frame" x="10" y="30" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="umT-4U-mCu"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入分隔符" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7RH-0q-Gj7">
+                                <rect key="frame" x="10" y="70" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OYR-pa-sQ8"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pon-Zb-Zzt">
+                                <rect key="frame" x="10" y="184" width="300" height="364"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeY-G6-gaw">
+                                <rect key="frame" x="130" y="144" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="HeY-dT-Rmh"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ny3-bL-gb5"/>
+                                </constraints>
+                                <state key="normal" title="开始分割">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToSplit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0V-qG-Qcu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pon-Zb-Zzt" secondAttribute="bottom" constant="20" id="1wa-ba-hoV"/>
+                            <constraint firstItem="yeY-G6-gaw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3OM-N8-8YN"/>
+                            <constraint firstItem="ZRx-U7-VxH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="50w-NA-GPT"/>
+                            <constraint firstItem="7RH-0q-Gj7" firstAttribute="top" secondItem="ZRx-U7-VxH" secondAttribute="bottom" constant="10" id="EfH-sX-eXH"/>
+                            <constraint firstAttribute="trailing" secondItem="ZRx-U7-VxH" secondAttribute="trailing" constant="10" id="K07-5T-lYz"/>
+                            <constraint firstItem="Pon-Zb-Zzt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="RRc-JT-nwI"/>
+                            <constraint firstItem="Pon-Zb-Zzt" firstAttribute="top" secondItem="yeY-G6-gaw" secondAttribute="bottom" constant="10" id="a1a-x5-r7A"/>
+                            <constraint firstItem="ZRx-U7-VxH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="dJf-FF-bBo"/>
+                            <constraint firstAttribute="trailing" secondItem="Pon-Zb-Zzt" secondAttribute="trailing" constant="10" id="hTo-DW-od8"/>
+                            <constraint firstItem="yeY-G6-gaw" firstAttribute="top" secondItem="7RH-0q-Gj7" secondAttribute="bottom" constant="44" id="kDQ-zq-Wh1"/>
+                            <constraint firstAttribute="trailing" secondItem="7RH-0q-Gj7" secondAttribute="trailing" constant="10" id="qhv-OO-Z0W"/>
+                            <constraint firstItem="7RH-0q-Gj7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="sfW-9V-w5s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="split" destination="7RH-0q-Gj7" id="LoY-pb-vRC"/>
+                        <outlet property="splitedText" destination="Pon-Zb-Zzt" id="66k-Lu-eKt"/>
+                        <outlet property="stringText" destination="ZRx-U7-VxH" id="t6q-82-wKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.33333333333334" y="343.16666666666669"/>
+        </scene>
+    </scenes>
+</document>
