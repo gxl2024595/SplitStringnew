@@ -29,7 +29,7 @@
     //增加了判断，实现空字符串或者空分隔符也可输出文本
     if (symbol.length == 0 || str.length == 0) {
         [mutableArr addObject:str];
-        return  [mutableArr copy];
+        return  mutableArr;
     }
     
     for (int flaghead = 0, flagtemp = 0;flagtemp<=str.length-symbol.length; flagtemp++) {
@@ -45,9 +45,7 @@
             [mutableArr addObject:splitStr];
         }
     }
-    //改进了输出文本框可能出现空行的情况
-    [mutableArr removeObject:@""];
-    return [mutableArr copy];
+    return mutableArr;
 }
 
 

@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+- (NSArray *)splitString: (NSString *)str withSymbol: (NSString *)symbol;
 @end
 
